@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> gps test</title>
+	<meta name="generator" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    
+  
+  <script>
+  $(function() {
+    $( ".moveit" ).draggable();
+  });
+    
+  </script>	
+	
+</head>
+
+<body>
+    <script>
+$(document).ready(function(){
+   
+$(window).load(function(){
+ var position1 =  document.getElementById('position1');
+    var signal1 = document.getElementById('signal1');
+    var position2 = document.getElementById('position2');
+    var signal2 = document.getElementById('signal2');
+    var position3 = document.getElementById('position3');
+    var signal3 = document.getElementById('signal3');
+   var position4 =  document.getElementById('position4');
+      var signal4 = document.getElementById('signal4');
+    position1.onclick = function (){
+$(".moveit").animate({
+top:"-=110",
+left:"-=30"},
+1000)};
+     position2.onclick = function (){
+$(".moveit").animate({
+top:"+=165",
+left:"-=190"},
+1000)};
+     position3.onclick = function (){
+$(".moveit").animate({
+top:"+=115",
+left:"+=65"},
+1000)};
+     position4.onclick = function (){
+$(".moveit").animate({
+top:"+=285",
+left:"+=25"},
+1000)};
+   signal1.onclick = function (){
+$(".dot1").animate({
+top:"+=75",
+left:"+=360"},
+10183)
+   $(".dot2").animate({
+top:"+=65",
+left:"-=300"},
+8500)
+    $(".dot3").animate({
+top:"-=525",
+left:"+=0"},
+14538)
+};
+     signal2.onclick = function (){
+$(".dot1").animate({
+top:"+=350",
+left:"+=195"},
+11098)
+   $(".dot2").animate({
+top:"+=340",
+left:"-=465"},
+15957)
+    $(".dot3").animate({
+top:"-=250",
+left:"-=165"},
+8298)
+};
+   signal3.onclick = function (){
+$(".dot1").animate({
+top:"+=300",
+left:"+=455"},
+15097)
+   $(".dot2").animate({
+top:"+=280",
+left:"-=205"},
+9613)
+    $(".dot3").animate({
+top:"-=300",
+left:"+=95"},
+8717)
+};  
+     signal4.onclick = function (){
+$(".dot1").animate({
+top:"+=470",
+left:"+=415"},
+17368)
+   $(".dot2").animate({
+top:"+=450",
+left:"-=245"},
+14193)
+    $(".dot3").animate({
+top:"-=135",
+left:"+=55"},
+4038)
+};  
+      });
+      });
+    </script>
+<img class="moveit" src="pp.jpg" width=50px height=50px STYLE="position:relative; top:200px; left:470px;">
+    
+    <div class="satellite" width=120cm height=80cm STYLE="position:absolute; TOP:8px; LEFT:0px;" class="ui-widget-content">
+            <img src="satelite.jpeg" width=202px height=107px; >
+    </div>
+   
+    <div class="satellite2" width=120cm height=80cm STYLE="position:absolute; TOP:8px; LEFT:700px;" class="ui-widget-content">
+            <img src="satelite.jpeg" width=202px height=107px; >
+    </div>
+    <div class="satellite3" width=120cm height=80cm STYLE="position:absolute; TOP:606.21778px; LEFT:350px;" class="ui-widget-content">
+        <img src="satelite.jpeg" width=202px height=107px; >
+    </div>
+      <div class="line1" width=120cm height=80cm STYLE="position:absolute; TOP:8px; LEFT:202px;" class="ui-widget-content">
+            <img src="line.png" width=496px; height=50px; >
+    </div>
+     <div class="line2" width=120cm height=80cm STYLE="position:absolute; TOP:115px; LEFT:101px;" class="ui-widget-content">
+            <img src="li2.png" width=250px; height=576px; >
+    </div>
+     <div class="line3" width=120cm height=80cm STYLE="position:absolute; TOP:115px; LEFT:550px;" class="ui-widget-content">
+            <img src="l3.png" width=250px height=576px; >
+    </div>
+ <div class="square" width=120cm height=80cm STYLE="position:absolute; TOP:75px; LEFT:425px;" class="ui-widget-content">
+            <img src="square1.png" width=100px height=100px; >
+    </div>
+     <div class="square2" width=120cm height=80cm STYLE="position:absolute; TOP:350px; LEFT:260px;" class="ui-widget-content">
+            <img src="square1.png" width=100px height=100px; >
+    </div>
+      <div class="square3" width=120cm height=80cm STYLE="position:absolute; TOP:300px; LEFT:520px;" class="ui-widget-content">
+            <img src="square1.png" width=100px height=100px; >
+    </div>
+    <div class="square4" width=120cm height=80cm STYLE="position:absolute; TOP:470px; LEFT:480px;" class="ui-widget-content">
+            <img src="square1.png" width=100px height=100px; >
+    </div>
+    <div class="dot1" width=120cm height=80cm STYLE="position:absolute; TOP:25px; LEFT:90px;" class="ui-widget-content">
+            <img src="dot.png" width=50px height=50px; >
+    </div>
+    <div class="dot2" width=120cm height=80cm STYLE="position:absolute; TOP:35px; LEFT:750px;" class="ui-widget-content">
+            <img src="dot.png" width=50px height=50px; >
+    </div>
+      <div class="dot3" width=120cm height=80cm STYLE="position:absolute; TOP:625px; LEFT:450px;" class="ui-widget-content">
+            <img src="dot.png" width=50px height=50px; >
+    </div>
+    <button type="button" id="position1"STYLE="position:absolute; TOP:100px; LEFT:1200px;">position1</button>
+     <button type="button" id="position2"STYLE="position:absolute; TOP:100px; LEFT:1300px;">position2</button>
+     <button type="button" id="position3"STYLE="position:absolute; TOP:100px; LEFT:1400px;">position3</button>
+ <button type="button" id="position4"STYLE="position:absolute; TOP:100px; LEFT:1500px;">position4</button>
+    <button type="button" id="signal1"STYLE="position:absolute; TOP:200px; LEFT:1200px;">signal1</button>
+      <button type="button" id="signal2"STYLE="position:absolute; TOP:200px; LEFT:1300px;">signal2</button>
+      <button type="button" id="signal3"STYLE="position:absolute; TOP:200px; LEFT:1400px;">signal3</button>
+      <button type="button" id="signal4"STYLE="position:absolute; TOP:200px; LEFT:1500px;">signal4</button>
+   <button type="button" id="show" style="position:absolute; Top:300px; Left:1200px;">result1</button>
+       <button type="button" id="show2" style="position:absolute; Top:300px; Left:1300px;">result2</button>
+      <button type="button" id="show3" style="position:absolute; Top:300px; Left:1400px;">result3</button>
+          <button type="button" id="show4" style="position:absolute; Top:300px; Left:1500px;">result4</button>
+<img src ="Circle.png" id="circle"style="visibility: hidden; position: absolute; top: -525.729px; left:-460.729px;"width=1100.459px height=1100.459px>
+    <img src ="Circle.png" id="circle2"style="visibility: hidden; position: absolute; top: -366.96px; left:348.039px;"width=853.9218px height=853.9218px>
+    <img src ="Circle.png" id="circle3"style="visibility: hidden; position: absolute; top: -85px; left:-285px;"width=1490px height=1490px>
+    <img src ="Circle.png" id="circle4"style="visibility: hidden; position: absolute; top: -500.6px; left:-435.6px;"width=1101.2px height=1101.2px>
+    <img src ="Circle.png" id="circle5"style="visibility: hidden; position: absolute; top: -706.04px; left:-1.04px;"width=1552.08px height=1552.08px>
+    <img src ="Circle.png" id="circle6"style="visibility: hidden; position: absolute; top: 225.46px; left:50.46px;"width=849.08px height=849.08px>
+<img src ="Circle.png" id="circle7"style="visibility: hidden; position: absolute; top: -695px; left:-630px;"width=1490px height=1490px>
+    <img src ="Circle.png" id="circle8"style="visibility: hidden; position: absolute; top: -402.04px; left:303.04px;"width=944.04px height=944.04px>
+    <img src ="Circle.png" id="circle9"style="visibility: hidden; position: absolute; top:205.32px; left:30.32px;"width=909.36px height=909.36px>
+<img src ="Circle.png" id="circle10"style="visibility: hidden; position: absolute; top: -826.9px; left:-761.9px;"width=1753.8px height=1753.8px>
+    <img src ="Circle.png" id="circle11"style="visibility: hidden; position: absolute; top: -642.37px; left:62.63px;"width=1424.74px height=1424.74px>
+    <img src ="Circle.png" id="circle12"style="visibility: hidden; position: absolute; top:452.5px; left:277.5px;"width=395px height=395px>
+    <script type="text/javascript">
+        document.getElementById("show").onclick = function () {
+document.getElementById("circle").style.visibility = "visible"
+        document.getElementById("circle2").style.visibility = "visible"
+         document.getElementById("circle3").style.visibility = "visible"};
+        document.getElementById("show2").onclick = function () {
+document.getElementById("circle4").style.visibility = "visible"
+        document.getElementById("circle5").style.visibility = "visible"
+         document.getElementById("circle6").style.visibility = "visible"};
+         document.getElementById("show3").onclick = function () {
+document.getElementById("circle7").style.visibility = "visible"
+        document.getElementById("circle8").style.visibility = "visible"
+         document.getElementById("circle9").style.visibility = "visible"};
+         document.getElementById("show4").onclick = function () {
+document.getElementById("circle10").style.visibility = "visible"
+        document.getElementById("circle11").style.visibility = "visible"
+         document.getElementById("circle12").style.visibility = "visible"};
+</script>
+     <button type="button" id="reset"STYLE="position:absolute; TOP:400px; LEFT:1200px;">reset</button>
+     <button type="button" id="reset2"STYLE="position:absolute; TOP:400px; LEFT:1300px;">reset2</button>
+       <button type="button" id="reset3"STYLE="position:absolute; TOP:400px; LEFT:1400px;">reset3</button>
+       <button type="button" id="reset4"STYLE="position:absolute; TOP:400px; LEFT:1500px;">reset4</button>
+     <script type="text/javascript">
+        document.getElementById("reset").onclick = function () {
+document.getElementById("circle").style.visibility = "hidden"
+        document.getElementById("circle2").style.visibility = "hidden"
+         document.getElementById("circle3").style.visibility = "hidden"
+$(".moveit").animate({
+top:"+=110",
+left:"+=30"},
+1000)        
+        $(".dot1").animate({
+top:"-=75",
+left:"-=360"},
+1000)
+   $(".dot2").animate({
+top:"-=65",
+left:"+=300"},
+1000)
+    $(".dot3").animate({
+top:"+=525",
+left:"+=0"},
+1000)};
+          document.getElementById("reset2").onclick = function () {
+document.getElementById("circle4").style.visibility = "hidden"
+        document.getElementById("circle5").style.visibility = "hidden"
+         document.getElementById("circle6").style.visibility = "hidden"
+$(".moveit").animate({
+top:"-=165",
+left:"+=190"},
+1000)
+      $(".dot1").animate({
+top:"-=350",
+left:"-=195"},
+1000)
+   $(".dot2").animate({
+top:"-=340",
+left:"+=465"},
+1000)
+    $(".dot3").animate({
+top:"+=250",
+left:"+=165"},
+1000)};
+         document.getElementById("reset3").onclick = function () {
+document.getElementById("circle7").style.visibility = "hidden"
+        document.getElementById("circle8").style.visibility = "hidden"
+         document.getElementById("circle9").style.visibility = "hidden"
+$(".moveit").animate({
+top:"-=115",
+left:"-=65"},
+1000)
+     $(".dot1").animate({
+top:"-=300",
+left:"-=455"},
+1000)
+   $(".dot2").animate({
+top:"-=280",
+left:"+=205"},
+1000)
+    $(".dot3").animate({
+top:"+=300",
+left:"-=95"},
+1000)};
+            document.getElementById("reset4").onclick = function () {
+document.getElementById("circle10").style.visibility = "hidden"
+        document.getElementById("circle11").style.visibility = "hidden"
+         document.getElementById("circle12").style.visibility = "hidden"
+$(".moveit").animate({
+top:"-=290",
+left:"-=30"},
+1000)
+ $(".dot1").animate({
+top:"-=470",
+left:"-=415"},
+1000)
+   $(".dot2").animate({
+top:"-=450",
+left:"+=245"},
+1000)
+    $(".dot3").animate({
+top:"+=135",
+left:"-=55"},
+1000)};
+</script>
+    
+    </body>
+</html>
